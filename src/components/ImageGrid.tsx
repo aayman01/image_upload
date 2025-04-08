@@ -58,7 +58,7 @@ export default function ImageGrid({
               alt="gallery"
               width={300}
               height={300}
-              style={{ width: "100%", cursor: "pointer" }}
+              style={{ width: "80%", cursor: "pointer" }}
               onClick={() => {
                 setCurrentImage(url);
                 setOpen(true);
