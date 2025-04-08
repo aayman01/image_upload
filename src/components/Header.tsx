@@ -13,7 +13,7 @@ export default function Header() {
           <Typography
             noWrap
             component="div"
-            sx={{ flexGrow: 1}}
+            sx={{ flexGrow: 1 }}
           >
             Image Gallery
           </Typography>
