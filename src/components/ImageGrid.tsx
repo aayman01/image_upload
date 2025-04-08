@@ -16,7 +16,7 @@ export default function ImageGrid({
 
   const handleDelete = async (path: string) => {
     if (!confirm("Are you sure you want to delete this image?")) return;
-    await supabase.storage.from("images").remove([path]);
+    await supabase.storage.from("aayman").remove([path]);
     onDelete();
   };
 
