@@ -34,7 +34,7 @@ const ImageUpload = ({ onUpload }: { onUpload: () => void }) => {
         console.log(data);
       }
       
-      onUpload();
+      onUpload(); 
     } catch (error) {
       setError(
         error instanceof Error ? error.message : "An unknown error occurred"

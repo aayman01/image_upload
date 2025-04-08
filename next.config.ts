@@ -1,7 +1,21 @@
-import type { NextConfig } from "next";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/** @type {import('next').NextConfig} */
+import path from 'path';
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  webpack(config : any) {
+    config.resolve.alias["@"] = path.resolve("src");
+    return config;
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "*",
+        port: "",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
