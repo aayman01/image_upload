@@ -50,10 +50,6 @@ export default function ImageGrid({
       <Grid container spacing={2} mt={2}>
         {images.map((url, idx) => (
           <Grid
-            xs={12}
-            sm={6}
-            md={4}
-            lg={3}
             key={idx}
             sx={{ position: "relative" }}
           >
